@@ -211,13 +211,13 @@ WHERE director IS NULL;
 
 **Objective:** List content that does not have a director.
 
-### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
+### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 15 Years
 
 ```sql
 SELECT * 
 FROM netflix
 WHERE casts LIKE '%Salman Khan%'
-  AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10;
+  AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 15;
 ```
 
 **Objective:** Count the number of movies featuring 'Salman Khan' in the last 10 years.
